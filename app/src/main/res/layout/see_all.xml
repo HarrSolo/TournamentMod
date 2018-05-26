@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:text="#1"
+        android:id="@+id/see_all_rank"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="@dimen/_15ssp"
+        android:paddingTop="@dimen/_5sdp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/_10sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="0dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="TEAM NAME"
+        android:id="@+id/see_all_team"
+        android:textSize="@dimen/_15ssp"
+        android:paddingTop="@dimen/_5sdp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:paddingLeft="@dimen/_10sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_weight="5"/>
+    <TextView
+        android:layout_width="0dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="5.0"
+        android:id="@+id/see_all_points"
+        android:textSize="@dimen/_15ssp"
+        android:textAlignment="center"
+        android:paddingTop="@dimen/_5sdp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/_10sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_weight="2"/>
+
+</LinearLayout>

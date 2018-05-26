@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "504570912064",
+    "firebase_url": "https://tournament-manager-edd99.firebaseio.com",
+    "project_id": "tournament-manager-edd99",
+    "storage_bucket": "tournament-manager-edd99.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:504570912064:android:2ff0556cc159989b",
+        "android_client_info": {
+          "package_name": "com.project.harrison.tournamentmod"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "504570912064-sguf7ktahqpti4pss5ljnm07d88kdjdf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.harrison.tournamentmod",
+            "certificate_hash": "59b9153d913c0d00a563b3e374260e7eea263a47"
+          }
+        },
+        {
+          "client_id": "504570912064-3scto6sumtpf5nq659irtaqe1mm276ie.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsKEQXKU4iD4HopeCjWCEyoAVk6SYbpI8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "504570912064-3scto6sumtpf5nq659irtaqe1mm276ie.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

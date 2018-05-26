@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue"
+    android:orientation="vertical"
+    tools:context=".ViewTournament">
+
+    <TextView
+        android:layout_marginTop="@dimen/_70sdp"
+        android:id="@+id/load_text"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_gravity="center"
+        android:background="@drawable/view_text"
+        android:textColor="#fff"
+        android:textSize="@dimen/_30ssp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_10sdp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="ENTER TOURNAMENT PASS KEY"
+        android:textAlignment="center"
+        android:textColor="#F9A825"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/keycode"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center"
+        android:background="#202020"
+        android:textAlignment="center"
+        android:textColor="#F9A825"
+        android:textSize="@dimen/_25ssp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/key_info"
+        android:layout_width="match_parent"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textAlignment="center"
+        android:textColor="#fa0000"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/unlock_button"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/unlock"
+        android:onClick="validate"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold" />
+
+
+
+</LinearLayout>

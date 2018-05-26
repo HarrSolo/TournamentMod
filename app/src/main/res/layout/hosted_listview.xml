@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_height="@dimen/_100sdp">
+
+            <TextView
+                android:id="@+id/host_name"
+                android:layout_width="180dp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="TOURNAMENT NAME"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/_20sdp">
+                <TextView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="ADMIN : HSF-YU6"
+                    android:textAllCaps="true"
+                    android:textColor="#F9A825"
+                    android:id="@+id/admin_key_text"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:text="AUDIENCE : CO8-P46"
+                    android:fontFamily="sans-serif-condensed"
+                    android:id="@+id/audience_key_text"
+                    android:textAllCaps="true"
+                    android:textColor="#F9A825"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/_40sdp">
+                <Button
+                    android:id="@+id/share_admin"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/share"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/share_audience"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_marginLeft="@dimen/_70sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/share"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_height="@dimen/_80sdp">
+
+            <Button
+                android:id="@+id/continue_host"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/open"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/delete_host"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/bin"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:background="#9E9E9E" />
+
+
+
+
+
+
+</LinearLayout>

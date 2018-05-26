@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue"
+    android:orientation="vertical"
+    tools:context=".info">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/info" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_weight="2"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="TOURNAMENT NAME"
+            android:inputType="textCapWords"
+            android:textColor="#ffffff"
+            android:textColorHint="#9E9E9E"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+            android:background="#F9A825"
+            android:onClick="start"
+            android:text="START"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="#9E9E9E" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:padding="@dimen/_2sdp">
+
+                <Button
+                    android:id="@+id/button_details"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:background="#ffffff"
+                    android:text="DETAILS"
+                    android:onClick="switcher"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button_names"
+                    android:layout_width="@dimen/_70sdp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:background="#000000"
+                    android:text="TEAMS"
+                    android:onClick="switcher"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ViewSwitcher
+                android:id="@+id/tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inAnimation="@android:anim/slide_in_left"
+                android:outAnimation="@android:anim/slide_out_right">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/no_of_teams"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_7sdp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="NO. OF TEAMS : "
+                                android:textColor="#ffffff"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/teams"
+                                android:layout_width="@dimen/_30sdp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:inputType="number"
+                                android:text="2"
+                                android:textAlignment="center"
+                                android:textColor="#F9A825"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:background="#ffffff"
+                            android:text="GROUP STAGE"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/_12ssp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/no_of_groups"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NO. OF GROUPS : "
+                                android:textColor="#ffffff"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/groups"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:inputType="number"
+                                android:text="1"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textAlignment="center"
+                                android:textColor="#F9A825"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/qualified_team_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="QUALIFYING TEAMS:\n          PER GROUP"
+                                android:textColor="#ffffff"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/group_qualifiers_count"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:inputType="number"
+                                android:text="1"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textColor="#F9A825"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/group_double"
+                            android:layout_width="wrap_content"
+                            android:fontFamily="sans-serif-condensed"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="#ffffff"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:text="HOME AND  AWAY"
+                            android:textSize="@dimen/_9ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-condensed"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="#ffffff"
+                            android:text="KNOCKOUTS"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/_12ssp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/round"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="ROUND : "
+                                android:textColor="#ffffff"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/round_text"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:inputType="text"
+                                android:textAlignment="center"
+                                android:textColor="#F9A825"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                        <CheckBox
+                            android:id="@+id/knockout_double"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="#ffffff"
+                            android:fontFamily="sans-serif-condensed"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:text="HOME AND AWAY"
+                            android:textSize="@dimen/_9ssp"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/third_place"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="#ffffff"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="THIRD PLACE MATCH "
+                            android:textSize="@dimen/_9ssp"
+                            android:textStyle="bold" />
+
+
+                        <CheckBox
+                            android:id="@+id/finals_double"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="#ffffff"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:text="FINALS HOME AND AWAY"
+                            android:textSize="@dimen/_8ssp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <ListView
+                    android:id="@+id/names"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </ViewSwitcher>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".05"
+            android:background="#9E9E9E" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_weight="2.5"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_140sdp"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_3sdp"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:alpha=".5"
+                    android:background="#000000"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/type_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_15sdp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="POINTS FOR"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:text="WIN     : "
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/win_points"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:inputType="number"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="3"
+                    android:textColor="#F9A825"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:text="DRAW : "
+                    android:textColor="#ffffff"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/draw_points"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:inputType="number"
+                    android:text="1"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="#F9A825"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:text="LOSS   :"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/loss_points"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:inputType="number"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="0"
+                    android:textColor="#F9A825"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

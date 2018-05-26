@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.6"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/stats_topic"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:text="STATS TOPIC"
+                android:textColor="#000"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/stats_team"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="TEAM"
+                android:textColor="#000"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/stats_grade"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:text="STATS"
+                android:fontFamily="sans-serif-condensed"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/stats_extra"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp"
+                android:fontFamily="sans-serif-condensed"
+                android:textAlignment="center"
+                android:text="EXTRA INFO"
+                android:textColor="#000"
+                android:textSize="@dimen/_13ssp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#767373"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_height="@dimen/_1sdp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:text="SEE ALL"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/stats_see_all"
+        android:textStyle="italic"
+        android:textSize="@dimen/_13ssp"
+        android:layout_gravity="end"
+        android:paddingRight="@dimen/_50sdp"
+        android:textAlignment="textEnd"
+        android:layout_height="@dimen/_30sdp" />
+    <View
+        android:layout_width="match_parent"
+        android:background="#767373"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_height="@dimen/_1sdp"/>
+
+</LinearLayout>

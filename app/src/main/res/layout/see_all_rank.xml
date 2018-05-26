@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".See_all_rank"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#000"
+        android:layout_height="@dimen/_30sdp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="RANK"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/see_all_rank"
+            android:paddingTop="@dimen/_10sdp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_weight="1.5"/>
+        <TextView
+            android:layout_width="0dp"
+            android:text="TEAM"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:id="@+id/see_all_team"
+            android:textSize="@dimen/_15ssp"
+            android:paddingTop="@dimen/_5sdp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_weight="5"/>
+        <TextView
+            android:layout_width="0dp"
+            android:id="@+id/see_all_points"
+            android:textSize="@dimen/_15ssp"
+            android:textAlignment="center"
+            android:paddingTop="@dimen/_5sdp"
+            android:textColor="#fff"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_weight="2"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/see_all_lv"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
