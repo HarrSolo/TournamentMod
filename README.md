@@ -13,3 +13,7 @@ An android app that let you manage all tasks related to tournaments such as fixt
 - Save tournaments locally 
 - Host your tournament live for others to see using a pass key
 
+## Snapshots :
+
+![1527339581916075](https://user-images.githubusercontent.com/36921581/40576383-e69185e0-6112-11e8-8f57-eb84c7968d77.JPG)
+
